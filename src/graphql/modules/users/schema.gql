@@ -13,13 +13,13 @@ input UserInput {
   active: Boolean!
 }
 
-type Query{
-    users: [User!]!
-    user:(id:ID!): User!
+type Query {
+  users: [User!]!
+  user(id: ID!): User!
 }
 
 type Mutation {
-    createUser(data: UserInput!): User!
-    updateUser(id: ID, data: UserInput!): User!
-    deleteUser(id: ID!): Boolean
+  createUser(data: UserInput!): User!
+  updateUser(id: ID, data: UserInput!): User!
+  deleteUser(id: ID!): Boolean
 }

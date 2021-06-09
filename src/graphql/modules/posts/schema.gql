@@ -11,13 +11,13 @@ input PostInput {
   author: ID!
 }
 
-type Query{
-    posts: [Post!]!
-    post:(id:ID!): Post!
+type Query {
+  posts: [Post!]!
+  post(id: ID!): Post!
 }
 
 type Mutation {
-    createPost(data: PostInput!): Post!
-    updatePost(id: ID, data: PostInput!): Post!
-    deletePost(id: ID!): Boolean
+  createPost(data: PostInput!): Post!
+  updatePost(id: ID, data: PostInput!): Post!
+  deletePost(id: ID!): Boolean
 }
